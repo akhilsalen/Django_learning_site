@@ -1,0 +1,23 @@
+
+
+
+<nav>
+
+    <div class="nav-wrapper">
+
+
+      <a href="/" class="brand-logo">TUTORIALS </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/">HOME</a></li>
+          {% if user.is_authenticated %}
+
+        <li><a href="/account">{{user.username }}</a></li>
+        <li><a href="/logout">LOGOUT</a></li>
+          {% else %}
+          <li><a href="/register">REGISTER</a></li>
+        <li><a href="/login">LOG-IN</a></li>
+          {% endif %}
+      </ul>
+    </div>
+    </div>
+  </nav>

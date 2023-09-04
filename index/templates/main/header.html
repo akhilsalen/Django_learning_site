@@ -1,0 +1,43 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Tutorials</title>
+    <link rel="stylesheet" href="{% static 'tinymce/css/prism.css' %}">
+
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+
+{% include "main/includes/navbar.html " %}
+{% include "main/includes/messages.html " %}
+
+
+<div class="container"><br>
+ {% block content %}
+
+
+ {% endblock%}
+
+     </div>
+
+
+
+
+<script src="{% static 'tinymce/js/prism.js' %}"></script>
+<script >   M.AutoInit(); </script>
+
+</body>
+</html>
+
+
+
+
+
+

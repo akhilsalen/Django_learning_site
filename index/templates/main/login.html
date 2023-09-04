@@ -1,0 +1,29 @@
+{%   extends "main/header.html" %}
+{% block content %}
+<div class="row">
+   {% for tut in tutorial %}
+
+
+     {% endfor %}
+
+    <form method="post" >
+
+
+        {% csrf_token %}
+        {{form.as_p}}
+
+            <button class=" btn " type="submit"
+>login</button>    </form>
+if you don't have an an account <a href="/register"><strong>register</strong> </a>for one.
+
+    {%endblock%}
+
+
+
+
+
+
+
+
+
+
